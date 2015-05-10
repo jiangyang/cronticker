@@ -121,7 +121,8 @@ describe('cron ticker', function() {
     var min = new Date().getMinutes()
     var sec = new Date().getSeconds()
     // console.log('minute/sec', min, sec)
-    ct3.set('foo', sec + ' '+ (min + 1) +' * * * *')
+    min = min === 59 ? 0: min + 1
+    ct3.set('foo', sec + ' '+ min +' * * * *')
     var triggerred = false
     ct3.on('task', function(id, cur, next) {
       triggerred = true
