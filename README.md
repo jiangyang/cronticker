@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/jiangyang/cronticker.svg?branch=master)](http://travis-ci.org/jiangyang/cronticker)
+
 ### CronTicker
 
 Set cron taskes and get notified when the task should trigger.
