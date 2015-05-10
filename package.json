@@ -1,6 +1,6 @@
 {
   "name": "cronticker",
-  "verion": "0.1.0",
+  "version": "0.1.0",
   "description": "a cron util that emits events on schedule",
   "dependencies": {
     "heap": "0.2.6",

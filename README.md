@@ -7,7 +7,7 @@ var CronTicker = require('cronticker')
 var ticker =  new CronTicker()
 ticker.on('task', function(id, cur, next) {
   // id is the name you set
-  // cur is the timestamp when the cron is supposed to trigger, there is a (small) delay obviously
+  // cur is the timestamp when the cron is supposed to trigger
   // next is the next timestamp when the cron is supposed to trigger
 })
 
