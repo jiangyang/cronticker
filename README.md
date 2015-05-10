@@ -2,7 +2,7 @@
 
 Set cron taskes and get notified when the task should trigger.
 
-```
+```javascript
 var CronTicker = require('cronticker')
 var ticker =  new CronTicker()
 ticker.on('task', function(id, cur, next) {
