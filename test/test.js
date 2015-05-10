@@ -118,14 +118,17 @@ describe('cron ticker', function() {
 
   it('should not tick for deleted task', function(done) {
     var ct3 = new CronTicker()
-    ct3.set('foo', '0 0/2 * * * *')
+    var min = new Date().getMinutes()
+    var sec = new Date().getSeconds()
+    // console.log('minute/sec', min, sec)
+    ct3.set('foo', sec + ' '+ (min + 1) +' * * * *')
     var triggerred = false
     ct3.on('task', function(id, cur, next) {
       triggerred = true
     })
-    clock.tick(60000)
+    clock.tick(30000)
     ct3.del('foo')
-    clock.tick(60000)
+    clock.tick(30000)
     assert(!triggerred)
     done()
   })
