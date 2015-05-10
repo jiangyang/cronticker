@@ -1,17 +1,27 @@
 {
   "name": "cronticker",
-  "verion": "0.0.1",
+  "verion": "0.1.0",
   "description": "a cron util that emits events on schedule",
-  "scripts": {
-    "test": "mocha -R spec ./test/test1.js"
-  },
   "dependencies": {
-    "later": "1.1.6",
-    "heap": "0.2.6"
-  },
+    "heap": "0.2.6",
+    "later": "1.1.6"
+    },
   "devDependencies": {
     "mocha": "^2.2.4",
     "sinon": "^1.14.1",
     "winston": "^1.0.0"
-  }
+  },
+  "keywords": [
+      "cron",
+      "trigger"
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/jiangyang/cronticker/blob/master/LICENSE.txt"
+    }
+  ],
+  "scripts": {
+    "test": "mocha -R spec ./test/test1.js"
+  } 
 }

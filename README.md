@@ -14,7 +14,7 @@ ticker.on('task', function(id, cur, next) {
 // cron expr starts always with second
 ticker.set('mytask', '* * * * * *') // the above event listener will get called once per second
 // change schedule on the fly
-ticer.set('mytask', '0 * * * * *')
+ticker.set('mytask', '0 * * * * *')
 // when no longer needed
 ticker.del('mytask')
 
