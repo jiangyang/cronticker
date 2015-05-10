@@ -22,6 +22,6 @@
     }
   ],
   "scripts": {
-    "test": "mocha -R spec ./test/test1.js"
+    "test": "mocha -R spec ./test/test.js"
   } 
 }
