@@ -2,6 +2,13 @@
 
 Set cron taskes and get notified when the task should trigger.
 
+To install...
+```
+npm install cronticker
+```
+
+And then...
+
 ```javascript
 var CronTicker = require('cronticker')
 var ticker =  new CronTicker()
